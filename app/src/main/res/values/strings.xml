@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SOIL AGRICULTURE IOT</string>
+    <string name="signin_msg">Have an account already? Click here to sign in</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_in_msg">Sign Up</string>
+    <string name="user_name">user_name</string>
+    <string name="welcome">Welcome</string>
+    <string name="sound">SOUND:</string>
+    <string name="sign_out">Sign out</string>
+    <string name="moisture_value">0</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

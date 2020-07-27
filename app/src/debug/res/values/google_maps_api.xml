@@ -1,0 +1,25 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=B8:86:3A:19:78:B3:A2:5E:FA:D7:77:F8:94:45:99:BC:6A:6B:0E:93%3Bcom.example.soilagricultureiot
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.soilagricultureiot
+
+    7SHA-1 certificate fingerprint:
+    B8:86:3A:19:8:B3:A2:5E:FA:D7:77:F8:94:45:99:BC:6A:6B:0E:93
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    done
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCq8pxEdOH3D325b3s969OuPxU2319IEkA</string>
+</resources>

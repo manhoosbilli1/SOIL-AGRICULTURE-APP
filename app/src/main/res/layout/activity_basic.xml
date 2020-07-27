@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicActivity">
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/farmer1"
+        android:background="@color/logo"
+        android:id="@+id/logo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Basic Mode"
+        android:background="@color/logo"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_below="@id/logo"
+        android:id="@+id/tvBM"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvBM"
+        android:background="@color/logo"
+        android:id="@+id/topPanel">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWelcome"
+            android:text="Welcome"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:text="@string/user_name"
+            android:id="@+id/userName"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/bottom_panel">
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_margin="5dp"
+            android:text="Sign Out"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:background="@drawable/button"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnAdvancedMode"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="Advanced"
+            android:layout_margin="5dp"
+
+            android:background="@drawable/button"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/topPanel"
+    android:layout_above="@id/bottom_panel"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topPanel"
+        android:layout_above="@id/bottom_panel"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_background"/>
+
+        <LinearLayout
+            android:id="@+id/sensor3_panel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/sensor2_panel"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_background">
+
+            <ImageView
+                android:id="@+id/ph_pic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="2dp"
+                android:src="@drawable/ph"
+
+                />
+
+            <TextView
+                android:id="@+id/ph_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="bottom"
+                android:textAlignment="gravity"
+                android:layout_weight="1"
+                android:text="LO"
+                android:textSize="30sp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sensor2_panel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/sensor1_panel"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_background">
+
+            <ImageView
+                android:id="@+id/smoke_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:src="@drawable/toxic" />
+
+            <TextView
+                android:id="@+id/smoke_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textAlignment="gravity"
+                android:layout_gravity="bottom"
+                android:text="LO"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sensor4_panel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/sensor3_panel"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_background">
+
+            <ImageView
+                android:id="@+id/moisture_pic"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/moisture"
+                />
+
+            <TextView
+                android:id="@+id/moisture_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="end|bottom"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="HI"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sensor1_panel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_background">
+
+            <ImageView
+                android:id="@+id/humidity_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:src="@drawable/humidity" />
+
+            <TextView
+                android:id="@+id/humidity_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="HI"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/humidity_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sensor1_panel"
+            android:layout_centerHorizontal="true"
+            android:text="HUMIDITY"
+            android:background="@color/logo"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+
+
+            />
+        <TextView
+            android:id="@+id/ph_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sensor3_panel"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="PH VALUE"
+            android:layout_centerInParent="true"
+            android:background="@color/logo"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+
+            />
+        <TextView
+            android:id="@+id/smoke_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sensor2_panel"
+            android:layout_centerHorizontal="true"
+            android:text="SMOKE"
+            android:background="@color/logo"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+        <TextView
+            android:id="@+id/moisture_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensor4_panel"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/logo"
+            android:gravity="center"
+            android:text="MOISTURE"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    tools:context=".MoistureActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/top">
+    <de.nitri.gauge.Gauge
+        android:id="@+id/gauge"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        gauge:initialValue="0.0"
+        gauge:maxValue="1023.0"
+        app:minValue="0.0"
+        android:background="@color/logo"
+        gauge:totalNicks="120"
+        app:upperText="Moisture"
+        app:upperTextSize="30"
+        app:lowerText="12.0"
+        app:lowerTextSize="30"
+        gauge:valuePerNick="10" />
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnBack"
+        android:layout_below="@+id/top"
+        android:id="@+id/chart"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/logo"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"
+        />
+
+</RelativeLayout>
