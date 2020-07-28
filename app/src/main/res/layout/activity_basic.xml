@@ -112,6 +112,132 @@
         android:layout_below="@id/topPanel"
         android:layout_above="@id/bottom_panel"
         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/phSuggestionPanel"
+            android:layout_below="@+id/moisture_text"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PH Health"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/phSuggestion"
+                android:text="N/A"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/smokeSuggestionPanel"
+            android:layout_below="@+id/phSuggestionPanel"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Smoke Health"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/smokeSuggestion"
+                android:text="N/A"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/moistureSuggestionPanel"
+            android:layout_below="@+id/smokeSuggestionPanel"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Moisture Health"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/moistureSuggestion"
+                android:text="N/A"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/humiditySuggestionPanel"
+            android:layout_below="@+id/moistureSuggestionPanel"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Humidity Health"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/humiditySuggestion"
+                android:text="N/A"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -203,7 +329,7 @@
                 android:layout_height="match_parent"
                 android:padding="20dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/moisture"
+                android:src="@drawable/humidity"
                 />
 
             <TextView
